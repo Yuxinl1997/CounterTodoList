@@ -1,0 +1,18 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.buttonRow {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+.buttonRow button {
+  margin: 5px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
