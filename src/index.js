@@ -46,9 +46,6 @@ class ContentContainer extends React.Component {
         </button>
         <HOCCounter visible={this.state.encryptedCounter} />
         <HOCTodoList visible={this.state.encryptedTodoList} />
-
-        {/* {this.state.encryptedCounter && <CounterSet />}
-        {this.state.encryptedTodoList && <TodoList />} */}
       </div>
     );
   }
