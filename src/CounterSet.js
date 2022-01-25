@@ -30,7 +30,7 @@ const Counter = (props) => {
   );
 };
 
-class App extends React.Component {
+class CounterSet extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -51,6 +51,8 @@ class App extends React.Component {
     if (this.state.count % 2 === 1) {
       this.setState({ count: this.state.count + 1 });
     }
+    //const {count}
+    //? 0:1
   };
   AsyncClickhandler = () => {
     setTimeout(() => {
@@ -68,6 +70,7 @@ class App extends React.Component {
       clearInterval(this.state.intervalId);
     }
   };
+  //根据生命周期 需要终结 否则浪费资源
 
   render() {
     return (
@@ -91,4 +94,4 @@ function Title(props) {
   return <div>{props.owner}'s Counter</div>;
 }
 
-export default App;
+export default CounterSet;
