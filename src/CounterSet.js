@@ -70,7 +70,6 @@ class CounterSet extends React.Component {
       clearInterval(this.state.intervalId);
     }
   };
-  //根据生命周期 需要终结 否则浪费资源
 
   render() {
     return (
